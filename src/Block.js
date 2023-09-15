@@ -90,9 +90,9 @@ export default class Block extends Component{
       }
       {this.state.view == 4 &&     
         <Draggable>
-          <div>
-            <img style={{transform: 'scale(.6)'}} alt='' draggable = 'false' src={note_bg}/>
-            <textarea style={{transform: 'scale(.6)',position: 'relative', top: -80, right: 278,width: 200, height: 150  ,borderStyle: 'none', outline: 'none',borderRadius: 10, backgroundColor: "white", color: "black", resize: 'none',fontSize: 20}} spellcheck="false" placeholder='This is a Comment!'/>
+          <div style={{width: 50, height:50}}>
+            <img alt='' draggable = 'false' src={note_bg}/>
+            <textarea style={{position: 'relative', top: -180, right: -5,width: 200, height: 150  ,borderStyle: 'none', outline: 'none',borderRadius: 10, backgroundColor: "white", color: "black", resize: 'none',fontSize: 20}} spellcheck="false" placeholder='This is a Comment!'/>
           </div>
           </Draggable>  
          }
