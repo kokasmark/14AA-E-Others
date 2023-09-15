@@ -48,7 +48,7 @@ export default class Block extends Component{
       <Draggable>
       <div className="Block" currentView={this.state.view}> 
       <img alt='' draggable = 'false' src={this.state.view == 0 && html_logo || this.state.view == 1 && css_logo || this.state.view == 2 && js_logo} style={{width: 40, height: 40, position: 'relative', top: 45, right: -118}} onClick={this.cycle}/>
-      <img alt='' draggable = 'false' src={code_icon} style={{width: 40, height: 40, position: 'relative', top: 45, right: 118}}/>
+      <img alt='' draggable = 'false' src={code_icon} style={{width: 40, height: 40, position: 'relative', top: 45, right: 118}} onClick={() =>  this.setState({tag: this.state.tag,view: 4})}/>
         {this.state.view == 0 &&
           <div>
             <img src={html_bg} draggable="false" className='block_bg'/>
